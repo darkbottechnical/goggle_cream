@@ -1,2 +1,3 @@
-# goggle_cream
-A better version of the google new tab I'm working on
+# GOGGLE CREAM
+
+### The best chrome extension ever made.
