@@ -1,0 +1,1 @@
+document.querySelectorAll('img').forEach(image=>{image.style.transform = 'rotate(180deg)';})

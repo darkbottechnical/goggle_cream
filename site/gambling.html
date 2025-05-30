@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambling Simulator</title>
+</head>
+
+<body>
+    <div>
+        <input type="number" placeholder="Max Value" id="maxValue">
+        <input type="number" placeholder="Player 1 Guess" id="p1Guess">
+        <input type="number" placeholder="Player 2 Guess" id="p2Guess">
+        <button id="gambleButton">Gamble!</button>
+        
+        
+    </div>
+    <p id="display"></p>
+    <p>Player 1 Wins: <span id="p1Wins">0</span></p>
+    <p>Player 2 Wins: <span id="p2Wins">0</span></p>
+    <button id="resetButton">Reset Counts</button>
+    <h1>Welcome to Gambling Simulator!</h1>
+    <h3>Waste your money!!!</h3>
+
+    <script src="gambling.js"></script>
+    <style>
+        html{
+            background: url(media/casinobg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        div{
+            position:absolute;
+            top: 45%;
+            left: 33%;
+            display: flex;
+            justify-content: center;
+            width: 33%;
+            display: inline-block;
+            background-color: rgba(100, 100, 100, 1);
+            border: 5px solid #ffffff;
+            border-radius: 5px;
+        }
+
+        p{
+            margin: 10px;
+            vertical-align: center;
+            background-color: rgba(100, 100, 100, 0.75);
+            color: #fff;
+            font: bold 20px Monospace;
+            display: inline-block;
+            padding: 10px;
+            border: 2px Solid #000000;
+            border-radius: 5px;
+        }
+
+        input{
+            all: unset;
+            font-family: "System UI";
+            height: 40px;
+            margin: 10px;
+            background-color: rgba(100, 100, 100, 0.75);
+            border-radius: 5px;
+            vertical-align: center;
+            text-align: center;
+            color: #fff;
+            padding: 2px;
+            border: 2px Solid #000000;
+
+        }
+
+        ::placeholder{
+            color: #b0b0b0;
+        }
+
+        button{
+            all: unset;
+            margin: 10px;
+            vertical-align: center;
+            background-color: rgba(100, 100, 100, 0.75);
+            padding: 2px;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            height: 40px;
+            border: 2px Solid #000000;
+
+        }
+        
+        button:hover{
+            background-color: rgba(150, 150, 150, 0.9);
+        }
+
+        h1{
+            color: #fff;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        h3{
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Comic Sans";
+        }
+    </style>
+</body>
+
+</html>

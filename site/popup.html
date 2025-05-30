@@ -1,0 +1,127 @@
+<head>
+    <title>Goggle Cream - Popup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 300px;
+            height: 400px;
+        }
+
+        .intro{
+            font-size: 16px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #f1f1f1;
+            border-right: 1px solid #ddd;
+        }
+
+        .tab:last-child {
+            border-right: none;
+        }
+
+        .tab.active {
+            background-color: #fff;
+            font-weight: bold;
+            border-bottom: 2px solid #007bff;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 10px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        button.scriptButton {
+            all: unset;
+            width: 22%;
+            color: #000;
+            padding: 10px;
+            background-color: #eee;
+            border-radius: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        button.scriptButton:hover {
+            transition: ease-in-out 0.2s;
+            background-color: #ccc;
+        }
+
+        button.size2Button {
+            all: unset;
+            width: 80%;
+            color: #000;
+            padding: 8px;
+            background-color: #eee;
+            border-radius: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        button.size2Button:hover {
+            transition: ease-in-out 0.2s;
+            background-color: #ccc;
+        }
+
+        .setting-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        select, input {
+            margin-left: 10px;
+        }
+        label{
+            font: 15px Calibri;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabs">
+        <div class="tab active" data-tab="tab1">Home</div>
+        <div class="tab" data-tab="tab2">Scripts</div>
+        <div class="tab" data-tab="tab3">Settings</div>
+    </div>
+    <div id="tab1" class="tab-content active">
+        <h3>GOGGLE CREAM V2.0.1</h3>
+        <div class="intro">This is the extension menu where you can run scripts on webpages and toggle the New Tab.</div><br>
+        <div class="intro">You can execute scripts by clicking on its corresponding button in the scripts tab. Don't worry, changes aren't permanent.</div>
+        <div class="intro">If you want to go back to using the default chrome new tab, you can toggle it off in settings.</div><br>
+        <div class="intro">Have fun!</div>
+    </div>
+    <div id="tab2" class="tab-content">
+        <h3>Scripts</h3>
+        <div id="scripts"></div>
+    </div>
+    <div id="tab3" class="tab-content">
+        <h3>General Settings</h3>
+        <div class="setting-container">
+            <label for="defaultTab">Default tab</label>
+            <select id="defaultTab">
+                <option value="Home">Home</option>
+                <option value="Scripts">Scripts</option>
+                <option value="Settings">Settings</option>
+            </select>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>

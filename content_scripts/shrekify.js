@@ -1,0 +1,1 @@
+document.querySelectorAll('img').forEach(image=>{image.src = "https://cdn.theatlantic.com/thumbor/4dTl39ouRGC009WveLQOUvmZ9l4=/68x29:1211x672/960x540/media/img/upload/wire/2014/05/19/shrek1/original.jpg"})

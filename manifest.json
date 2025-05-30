@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Goggle Cream",
+  "version": "2.0.1",
+  "description": "The best chrome extension ever made.",
+  "permissions": ["tabs", "activeTab", "storage", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+  },
+  "background": {
+      "service_worker": "background.js"
+  },
+  "chrome_url_overrides": {
+      "newtab": "site/index.html"
+  },
+  "action": {
+      "default_popup": "site/popup.html",
+      "default_icon": {
+          "16": "icon.png",
+          "32": "icon.png",
+          "48": "icon.png",
+          "128": "icon.png"
+      }
+  },
+  "web_accessible_resources": [
+      {
+          "resources": ["popup.js"],
+          "matches": ["<all_urls>"]
+      }
+  ]
+}

@@ -1,0 +1,127 @@
+body {
+    background: linear-gradient(to bottom right,  #2b1352, #000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    transition: opacity 3s;
+}
+
+#textlogo {
+    color: #ffffff;
+    font-size: 150px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+#searchbar {
+    background-color: #6b6b6b;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 33%;
+    width: 33%;
+    text-align: center;
+}
+
+#search{
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+    position: absolute;
+    text-align: center;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 0.7;
+    text-align: center;
+}
+
+#shortcuts {
+    width: 33%;
+    position: absolute;
+    left: 33%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgba(143, 143, 143, 0.5);
+    color: #eee;
+    margin: 2px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: #fff;
+    transition: 0.1s ease-in-out;
+    background-color: rgba(130, 130, 130, 0.75);
+}
+
+#defbuttons {
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    position: absolute;
+    left: 33%;
+    bottom: 5%;
+}
+
+.big {
+    flex: 1;
+    width: 50%;
+    margin: 5px;
+}
+
+.right{
+    position: absolute;
+    right: 9.5%;
+}
+
+.right2{
+    position: absolute;
+    right: 5%;;
+}
+
+#mainrntext{
+    text-align: center;
+    color: #ffffff;
+    font-family: "Monospace";
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+button{
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgba(143, 143, 143, 0.5);
+    color: #eee;
+    margin: 2px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    color: #fff;
+    transition: 0.1s ease-in-out;
+    background-color: rgba(130, 130, 130, 0.75);
+}
+
+#bgedit{
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+
